@@ -13,18 +13,36 @@ class BooksController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def destroy
+  end
+
+  # create / update wont have their own views; just redirect statements
   def create
     @book = Book.new(book_params)
 
     if @book.save
       redirect_to root_path
     else
+      # when you 'render', you're rendering another action within the controller-- not necessarily a view per se,
+      # but specifically the action and its methods prior to its associated view
       render 'new'
     end
   end
 
-  private
+  def update
+    # if book is updated successfully, display edit view with form to edit what's already available
+    # book_params is going to be changed
+    if @book.update(book_params)
+      redirect_to book_path(@book)
+    else
+      render 'edit'
+    end
+  end
 
+  private
     def book_params
       params.require(:book).permit(:title, :description, :author)
     end
@@ -32,5 +50,4 @@ class BooksController < ApplicationController
     def find_book
       @book = Book.find(params[:id])
     end
-
 end
