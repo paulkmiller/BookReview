@@ -1,24 +1,14 @@
-# README
+# Book Review App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Getting back in the groove with the back-end on RoR in prep for [RoR 5.1](http://edgeguides.rubyonrails.org/5_1_release_notes.html)
 
-Things you may want to cover:
+Basic Objectives:
+* Make a functioning CRUD App
 
-* Ruby version
+* Get User functionality to work
 
-* System dependencies
+* Use Materialize-Bootstrap to see if I can dig it
 
-* Configuration
+* Brush off the rust of having not directly worked with the Rails back-end / Ruby for nearly a year
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* See if concepts I've learned focusing on the FE can transfer to the BE in hopes that in becoming more versed with BE concepts, I can progress myself as a FE engineer instead of a simply designer
