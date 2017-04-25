@@ -3,8 +3,13 @@
   <head>
     <title>BookReview</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Application.scss -->
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Material Design Fonts -->
+    <%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Roboto:300,400,500,700', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag '//fonts.googleapis.com/icon?family=Material+Icons', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Bootstrap Material Design -->
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 

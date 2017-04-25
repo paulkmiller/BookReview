@@ -1,6 +1,6 @@
 <%= simple_form_for @book do |f| %>
-  <%= f.input :title, label: "Book Title" %>
-  <%= f.input :description %>
-  <%= f.input :author %>
-  <%= f.button :submit %>
+  <%= f.input :title, label: "Book Title", wrapper_html: { class: 'm6 s12' } %>
+  <%= f.input :description, wrapper_html: { class: 'm6 s12' } %>
+  <%= f.input :author, wrapper_html: { class: 'm6 s12' } %>
+  <%= f.button :submit, wrapper_html: { class: 'm6 s12' } %>
 <% end %>
