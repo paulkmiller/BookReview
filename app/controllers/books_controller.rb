@@ -7,7 +7,7 @@ class BooksController < ApplicationController
   end
 
   def new
-    @book = Book.new
+    @book ||= Book.new
   end
 
   def show
@@ -30,7 +30,7 @@ class BooksController < ApplicationController
     else
       # when you 'render', you're rendering another action within the controller-- not necessarily a view per se,
       # but specifically the action and its methods prior to its associated view
-      render 'new'
+      new
     end
   end
 
